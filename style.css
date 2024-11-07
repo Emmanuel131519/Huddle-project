@@ -1,168 +1,297 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-:root{
-    --Pink: hsl(322, 100%, 66%);
---Light-Pink: hsl(321, 100%, 78%);
---Light-Red: hsl(0, 100%, 63%);
---Very-Dark-Cyan: hsl(192, 100%, 9%);
---Very-Pale-Blue: hsl(207, 100%, 98%);
+:root {
+  --Pink: hsl(322, 100%, 66%);
+  --Light-Pink: hsl(321, 100%, 78%);
+  --Light-Red: hsl(0, 100%, 63%);
+  --Very-Dark-Cyan: hsl(192, 100%, 9%);
+  --Very-Pale-Blue: hsl(207, 100%, 98%);
 }
-body{
-    font-family: "Open Sans", sans-serif;
-    max-width: 1936px;
-    margin: 0 auto;
-}
-
-h1,h2,h3,h4,h5,h6{
-    font-family: "Poppins", sans-serif;
+body {
+  font-family: "Open Sans", sans-serif;
+  max-width: 1936px;
+  margin: 0 auto;
 }
 
-.container{
-    max-width: 58%;
-    margin: 0 auto;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Poppins", sans-serif;
 }
 
-nav{
-    padding-top: 1rem;
+.container {
+  max-width: 58%;
+  margin: 0 auto;
+}
+
+nav {
+  padding-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-container img {
+  width: 130px;
+}
+
+.nav-container button {
+  border: none;
+  border: 2px solid var(--Light-Pink);
+  padding: 0.5rem 1.2rem;
+  border-radius: 30px;
+  font-weight: 700;
+  cursor: pointer;
+  color: var(--Light-Pink);
+}
+
+.header-container {
+  padding: 100px 40px;
+  text-align: center;
+}
+
+.header-section-2 img {
+  max-width: 100%;
+}
+
+.header-section-1 h1 {
+  font-size: 30px;
+  font-weight: 700;
+  font-family: "Poppins", sans-serif;
+}
+
+.header-section-1 p {
+  padding: 18px 0;
+  max-width: 70%;
+  margin: auto;
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+.header-section-1 button {
+  border: none;
+  padding: 1rem;
+  border-radius: 20px;
+  background-color: var(--Pink);
+  width: 40%;
+  color: var(--Very-Pale-Blue);
+  margin: 2rem 0 5rem 0;
+  cursor: pointer;
+}
+
+.header-section-2-div-1 {
+  display: flex;
+  gap: 160px;
+  justify-content: center;
+  text-align: center;
+  padding-bottom: 7rem;
+  justify-content: space-around;
+}
+
+.section-2-h1 {
+  text-align: initial;
+  display: flex;
+  gap: 150px;
+  margin-right: 10px;
+}
+
+.header-section-2-div-2-img {
+  width: 80%;
+}
+
+.header-section-2-div-2 {
+  display: flex;
+  padding-bottom: 10rem;
+}
+
+.header-section-2-div-2-p {
+  text-align: initial;
+  line-height: 25px;
+  max-width: 100%;
+  font-weight: 400;
+  font-size: 1rem;
+  padding: 1rem 0 0 0;
+}
+
+.header-section-2-div-3 {
+  padding: 2rem;
+}
+
+.header-section-2-div-4 {
+  display: flex;
+  padding-bottom: 10rem;
+}
+
+.header-section-2-h1 {
+  text-align: initial;
+  display: flex;
+  gap: 150px;
+}
+/* main */
+.main-container{
     display: flex;
-justify-content: space-between;
-align-items: center;
+   background-image: url("asset/bg-section-bottom-desktop-1.svg");
+   background-repeat: no-repeat;
+   background-size: contain;
+   max-width: 100%;
+padding: 10rem 0;
 }
 
-
-.nav-container img{
-    width: 130px;
+.main-container-div{
+    /* max-width: 100%; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+ gap: 5rem;
+ max-width: 85%;
+}
+.main-container-text{
+    max-width: 45%;
 }
 
-.nav-container button{
-    border: none;
-    border: 2px solid var(--Light-Pink);
-padding: 0.5rem 1.2rem;
-border-radius: 30px;
-font-weight: 700;
-cursor: pointer;
-color: var(--Light-Pink);
+.main-container-text-2{
+    max-width: 45%;
 }
 
-.header-container{
-padding: 100px 40px;
-text-align: center;
+.main-container-div-2{
+    /* max-width: 100%; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+ gap: 2rem;
+ max-width: 85%;
+ flex-direction: row;
+ flex-direction: row-reverse;
 }
 
-.header-section-2 img{
-    max-width: 100%;
+.main-container-img-2 img{
+    max-width: 50%;
 }
 
-.header-section-1 h1{
-    font-size: 30px;
+.main-container-img img{
+    max-width: 50%;
+}
+
+.main-container-2{
+    display: flex;
+   background-image: url("asset/bg-section-bottom-desktop-1.svg");
+   background-repeat: no-repeat;
+   background-size: contain;
+   max-width: 100%;
+padding: 10rem 0;
+justify-content: center;
+}
+
+.main-container-3{
+    display: flex;
+   background-image: url("asset/bg-section-bottom-desktop-1.svg");
+   background-repeat: no-repeat;
+   background-size: contain;
+   max-width: 100%;
+padding: 10rem 0;
+justify-content: center;
+}
+
+.main-container-img-3 img{
+    max-width: 50%;
+}
+
+.main-container-div-3{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+ gap: 5rem;
+ max-width: 85%;
+ justify-content: center;
+}
+@media (max-width: 765px) {
+  .container {
+    max-width: 90%;
+    margin: 0 auto;
+  }
+
+  .header-container {
+    padding: 100px 15px;
+    text-align: center;
+  }
+
+  .header-section-1 h1 {
+    font-size: 25px;
     font-weight: 700;
-    font-family:"Poppins", sans-serif;
-}
+  }
 
-.header-section-1 p{
-    padding: 18px 0;
-    max-width: 70%;
+  .header-section-1 p {
+    max-width: 100%;
     margin: auto;
-    font-weight: 400;
-    font-size: 1rem;
-}
+  }
 
-.header-section-1 button{
+  .header-section-1 button {
     border: none;
     padding: 1rem;
     border-radius: 20px;
     background-color: var(--Pink);
-    width: 40%;
+    width: 65%;
     color: var(--Very-Pale-Blue);
     margin: 2rem 0 5rem 0;
-    cursor: pointer;
-}
-
-.header-section-2-div-1{
+  }
+  .main-container{
     display: flex;
-    gap: 160px;
-    justify-content: center;
-    text-align: center;
-    padding-bottom:7rem;
-    justify-content: space-around;
+   background-image: url("asset/bg-section-bottom-desktop-1.svg");
+   background-repeat: no-repeat;
+   background-size: contain;
+   max-width: 100%;
+padding: 10rem 0;
 }
 
-.section-2-h1{
-    text-align: initial;
+.main-container-div{
+    /* max-width: 100%; */
     display: flex;
-    gap: 150px;
-    margin-right: 10px;}
-
-.header-section-2-div-2-img{
-    width: 80%;
-
+    justify-content: space-between;
+    align-items: center;
+ gap: 5rem;
+ max-width: 85%;
+}
+.main-container-text{
+    max-width: 45%;
 }
 
-.header-section-2-div-2{
+.main-container-text-2{
+    max-width: 45%;
+}
+
+.main-container-div-2{
+    /* max-width: 100%; */
     display: flex;
-    padding-bottom: 10rem;
+    justify-content: space-between;
+    align-items: center;
+ gap: 5rem;
+ max-width: 85%;
 }
 
-
-
-.header-section-2-div-2-p{
- text-align: initial;
-    line-height: 25px;
+.main-container-img-2 img{
     max-width: 100%;
-    font-weight: 400;
-    font-size: 1rem;
-    padding: 1rem 0 0 0;
 }
 
-.header-section-2-div-3{
- padding: 2rem;
+.main-container-img img{
+    max-width: 50%;
 }
 
-.header-section-2-div-4{
+.main-container-2{
     display: flex;
-    padding-bottom: 10rem;
-
+   background-image: url("asset/bg-section-bottom-desktop-1.svg");
+   background-repeat: no-repeat;
+   background-size: contain;
+   max-width: 75%;
+padding: 10rem 0;
+justify-content: center;
 }
-
-.header-section-2-h1{
-    text-align: initial;
-    display: flex;
-    gap: 150px;
-}
-@media(max-width:765px){
-.container{
-    max-width: 90%;
-    margin: 0 auto;
-}
-
-    .header-container{
-        padding: 100px 15px;
-        text-align: center;
-    }
-
-    .header-section-1 h1{
-        font-size: 25px;
-        font-weight: 700;
-    }
-
-    .header-section-1 p{
-        max-width: 100%;
-        margin: auto;
-    }
-
-    .header-section-1 button{
-        border: none;
-        padding: 1rem;
-        border-radius: 20px;
-        background-color: var(--Pink);
-        width: 65%;
-        color: var(--Very-Pale-Blue);
-        margin: 2rem 0 5rem 0;
-    }
 }
