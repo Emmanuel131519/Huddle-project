@@ -29,7 +29,7 @@ h6 {
 }
 
 .container {
-  max-width: 60%;
+  max-width: 58%;
   margin: 0 auto;
 }
 
@@ -91,8 +91,9 @@ nav {
 .header-section-2-div-1 {
   display: flex;
   gap: 160px;
-  text-align: start;
-  padding: 70px 0;
+  justify-content: center;
+  text-align: center;
+  padding-bottom: 7rem;
   justify-content: space-around;
 }
 
@@ -136,13 +137,15 @@ nav {
   gap: 150px;
 }
 /* main */
+
+
 .main-container{
     display: flex;
    background-image: url("asset/bg-section-bottom-desktop-1.svg");
    background-repeat: no-repeat;
    background-size: contain;
    max-width: 100%;
-padding: 5rem 0;
+padding: 10rem 0;
 }
 
 .main-container-div{
@@ -150,68 +153,64 @@ padding: 5rem 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 30px;
+ gap: 5rem;
+ max-width: 70%;
 }
 .main-container-text{
     max-width: 45%;
 }
 
-.main-container-img{
-  width: 40%;
+.main-container-img img{
+    max-width: 70%;
 }
 
-.main-container-img img{
+.main-container-2{
+  display: flex;
+  background-image: url("asset/bg-section-bottom-desktop-1.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
   max-width: 100%;
+padding: 10rem 0;
 }
 
 .main-container-div-2{
-    /* max-width: 100%; */
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
- gap: 2rem;
- max-width: 85%;
- flex-direction: row;
- flex-direction: row-reverse;
-}
-
-.main-container-img-2 img{
-    max-width: 50%;
-}
-
-
-
-.main-container-2{
-    display: flex;
-   background-image: url("asset/bg-section-bottom-desktop-1.svg");
-   background-repeat: no-repeat;
-   background-size: contain;
-   max-width: 100%;
-padding: 10rem 0;
-justify-content: center;
-}
-
-.main-container-3{
-    display: flex;
-   background-image: url("asset/bg-section-bottom-desktop-1.svg");
-   background-repeat: no-repeat;
-   background-size: contain;
-   max-width: 100%;
-padding: 10rem 0;
-justify-content: center;
-}
-
-.main-container-img-3 img{
-    max-width: 50%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+gap: 5rem;
+max-width: 70%;
+flex-direction: row;
+flex-direction: row-reverse;
 }
 
 .main-container-div-3{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
- gap: 5rem;
- max-width: 85%;
- justify-content: center;
+  /* max-width: 100%; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+gap: 5rem;
+max-width: 70%;
+}
+
+.main-container-3{
+  display: flex;
+ background-image: url("asset/bg-section-bottom-desktop-1.svg");
+ background-repeat: no-repeat;
+ background-size: contain;
+ max-width: 100%;
+padding: 10rem 0;
+}
+
+
+.main-container-img-2{
+  max-width: 70%;
+}
+
+.main-container-img-3{
+  max-width: 70%;
+}
+.main-container-text-3{
+  max-width: 45%;
 }
 @media (max-width: 765px) {
   .container {
@@ -244,12 +243,6 @@ justify-content: center;
     margin: 2rem 0 5rem 0;
   }
 
-  .header-section-2-div-1 {
-    flex-direction: column;
-  text-align: center;
-  }
-
-  /* main */
   .main-container{
     display: flex;
    background-image: url("asset/bg-section-bottom-desktop-1.svg");
@@ -260,6 +253,7 @@ padding: 10rem 0;
 }
 
 .main-container-div{
+  text-align: center;
    flex-direction: column-reverse;
 }
 .main-container-text{
@@ -273,28 +267,29 @@ width: 100%;
 .main-container-img img{
 max-width: 100%;
 }
+
+
+
 .main-container-div-2{
-    /* max-width: 100%; */
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
- gap: 5rem;
- max-width: 85%;
-}
-
-.main-container-img-2 img{
-    max-width: 100%;
-}
-
-
-
-.main-container-2{
-    display: flex;
-   background-image: url("asset/bg-section-bottom-desktop-1.svg");
-   background-repeat: no-repeat;
-   background-size: contain;
-   max-width: 75%;
-padding: 10rem 0;
+flex-direction: column;
+flex-direction: column-reverse;
 justify-content: center;
+text-align: center;
+}
+
+.main-container-img-2{
+  max-width: 100%;
+}
+ 
+.main-container-div-3{
+justify-content: center;
+text-align: center;
+flex-direction: column;
+flex-direction: column-reverse;
+
+}
+
+.main-container-text-3{
+  max-width: 100%;
 }
 }
